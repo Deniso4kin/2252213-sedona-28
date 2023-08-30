@@ -1,4 +1,3 @@
-
 .page-footer {
   display: flex;
   flex-direction: column;
@@ -24,6 +23,14 @@
   text-decoration: none;
   margin-top: 33px;
   margin-bottom: 30px;
+
+  &:hover {
+    color: #81B3D2;
+  }
+
+  &:active {
+    color: #B3B3B3;
+  }
 }
 
 .page-footer__socials-list {
@@ -52,4 +59,28 @@
 .socials-svg,
 .page-footer__htmlacademy-link-svg {
   display: block;
+}
+
+.socials-svg {
+  fill: #81B3D2;
+
+  &:hover {
+    fill: #669EC0;
+  }
+
+  &:active {
+    fill: #24658b;
+  }
+}
+
+.page-footer__htmlacademy-link-svg {
+  fill: #000;
+
+  &:hover {
+    fill: #81B3D2;
+  }
+
+  &:active {
+    fill: #B3B3B3;
+  }
 }

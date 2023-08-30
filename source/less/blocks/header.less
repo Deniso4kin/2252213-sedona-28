@@ -44,7 +44,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     left: calc(50% - 185px / 2);
   }
 }
@@ -61,12 +61,17 @@
     border: none;
     padding: 0;
 
+
     &:hover {
       opacity: 0.6;
     }
 
     &:focus {
-      opacity: 0.3;
+      opacity: 0.4;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 
@@ -99,6 +104,10 @@
     &:focus {
       opacity: 0.3;
     }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 
   .header__navigation--closed .header__navigation-close-button,
@@ -109,4 +118,16 @@
 
 .header__navigation-close-button {
   display: none;
+}
+
+.navigation-list__link:hover {
+
+  
+  &:hover {
+    color: #81B3D2;
+  }
+
+  &:active {
+    color: #B3B3B3;
+  }
 }
