@@ -74,11 +74,13 @@
     }
 
     &:hover::after {
-      transform: scale(2, 2);
+      transition: all 0.3s ease-out;
+      transform: scale(3, 3);
     }
 
     &:active::after {
-      transform: scale(1.5, 1.5);
+      transform: scale(2, 2);
+      transition: all 0.1s ease-out;
     }
   }
 
